@@ -3,7 +3,7 @@ from socket import *
 import sys  # In order to terminate the program
 
 serverSocket = socket(AF_INET, SOCK_STREAM) # first of all, we create our server socket using SOCK_STREAM
-serverSocket.bind(("192.118.132.135", 80))    # which related to TCP. Than we are binding between our IP address
+serverSocket.bind(("", 80))    # which related to TCP. Than we are binding between our IP address
 serverSocket.listen(1)                      # and the port which the message sent in. and finally open our serverSocket
                                             # for listening until somthing will happen.
 
